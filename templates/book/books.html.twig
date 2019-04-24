@@ -1,0 +1,10 @@
+{% extends 'book/index.html.twig' %}
+
+{% block superbody %}
+	<p>List of books : </p>
+	<ul>
+		{% for book in books %}
+			<li><a href="book/{{loop.index0}}">{{book.getTitle()}}</a></li>
+		{% endfor %}
+	</ul>
+{% endblock %}

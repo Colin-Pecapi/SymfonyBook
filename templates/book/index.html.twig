@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello BookController!{% endblock %}
+
+{% block body %}
+<div class="example-wrapper">
+    <h1>{{ page }} ! ✅</h1>
+    {% block nav %}
+		<a href="{{path('index')}}">Index</a>
+		<a href="{{path('books')}}">Books</a>
+	{% endblock %}	
+</div>
+{% endblock %}
+{% block superbody %}
+<h2>About us</h2>
+<p>Lorem ipsum dolor...</p>
+{% endblock %}
+
+
+
+
